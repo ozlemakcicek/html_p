@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+</head>
+
+<!-- external css -->
+<link rel="stylesheet" href="./style.css">
+
+<!-- internal css -->
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6em;
+}
+.main-head, .title{
+   background-color: rgb(49, 47, 45);
+    color: chocolate; 
+     height: 10vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+
+    background-color: white;
+    color: rgba(131, 41, 6, 0.884);
+   
+}
+
+.container{
+    margin:0 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-form{
+    padding: 20px;
+    width: 50%;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-group input[type="text"], input[type="number"],input[type="date"],textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+
+
+.my-form input[type="submit"]{
+    padding: 10px 15px;
+    margin-top: 2rem;
+    background-color: rgb(221, 133, 150);
+    border: none;
+    &:hover{
+color: white;
+background-color:rgb(116, 20, 39) ;
+    }
+
+}
+
+   .button{
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(219, 135, 135);
+  
+
+  &:hover{
+    background-color:rgb(199, 66, 59) ;
+    color: white;
+  }
+   }
+   .go{
+   
+    color: slategray;
+    text-decoration: none;
+
+    &:hover{
+        color: crimson;
+    }
+
+    
+    &:active{
+        color: pink;
+    }
+ 
+
+   }
+
+   img{
+    border-radius: 2rem;
+    
+   
+   }
+
+   .block{
+    float: left;
+    width: 70%;
+    margin-left: 4rem;
+   }
+.sidebar{
+    float: right;
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-right: 2rem;
+}
+
+@media (max-width: 700px){
+
+    .block{
+        width: 30%;
+    }
+    .sidebar{
+       margin-bottom: 1rem;
+    }
+}
+
+#main-html{
+    float: left;
+    width: 49%;
+}
+
+#main-css{
+    float: right;
+    width: 49%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+   
+    }
+    .imgdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #main-footer{
+        text-align: center;
+    }
+
+</style>
+
+
+<body>
+
+
+    <div class="container"> <a href="blog.html" class="go">Go to blog</a>
+        <h1 class="main-head">HTML & CSS Tutorial</h1>
+
+        
+        <section class="sec1">   
+              <div id="main-html">
+         <h1 class="title">
+            
+            
+            Was ist HTML?
+        </h1>
+       
+
+    <div class="imgdiv">
+        <img src="./img/html-386094_640.jpg" alt="html" width="300px">
+    </div>
+        
+
+
+        <h3>Der Begriff "HTML" steht für "Hypertext Markup Language", auf deutsch "Hypertext-Auszeichnungssprache".
+            Hierbei handelt
+            es sich um das Format, in dem Webseiten geschrieben werden.
+        </h3>
+        <ul>
+            <li class="punkt">
+                <span>In einer HTML-Datei schreibt der Ersteller der Webseite den Text einer Website. Mit der HTML-Datei
+                    lässt sich ein Text
+                    strukturieren und formatieren (z.B. Schriftgröße und Schriftart). Außerdem binden Sie via HTML Links
+                    auf andere
+                    Webseiten ein oder ergänzen Ihren Text um Bilder, Videos oder Hintergrundgeräusche.</span>
+            </li>
+            <li class="punkt">
+                <p>Browser wie <strong>Chrome, Firefox, Safari oder der Internet Explorer </strong>lesen die HTML-Datei
+                    in Bruchteilen
+                    von Sekunden und
+                    zeigen diese anschließend grafisch an.</p>
+            </li>
+            <li class="punkt">
+                <p>In der Regel werden HTML-Dateien nicht mehr selber geschrieben. Webseiten-Betreibern wird diese
+                    Arbeit mit einer
+                    grafischen Oberfläche abgenommen - dies geschieht zum Beispiel via Content Management Systemen wie
+                    WordPress oder Typo3.</p>
+            </li>
+            <li class="punkt">
+                <p>
+                    Tipp: Klicken Sie mit der rechten Maustaste in einem freien Bereich auf dieser Webseite und wählen
+                    Sie die Option
+                    "Speichern unter" oder <em>"Seite speichern unter".</em> Anschließend können Sie die HTML-Datei
+                    dieser
+                    Webseite herunterladen und
+                    sich den blanken Code im Editor ansehen.<a href="http://google.com" target="_blank"> Zusätzliche
+                        Information</a> neben den einzelnen Worten finden Sie immer wieder Befehle
+                    für Links oder
+                    Bilder.
+                </p>
+            </li>
+        </ul>
+
+        <a href="https://www.schulhomepage.de/webdesign/html" target="_blank">
+            <button class="button">Klicken Sie</button>
+        </a>
+
+</div> 
+       
+<div id="main-css">   
+      <h1 class="title">Was ist CSS</h1>
+
+
+    <div class="imgdiv">
+        <img src="./img/css3-1841488_1280.jpg" alt="css image" width="300px" height="210vh" ></div>
+
+        <ol>
+            <li>Die Abkürzung CSS steht für "Cascading Style Sheets", was übersetzt so viel bedeutet wie "gestufte
+                Gestaltungsbögen".
+                Kurz gesagt: CSS wird eingesetzt um Webseiten zu gestalten.</li>
+            <li>Um das Design einer Webseite zu erstellen, zum Beispiel Schriftgröße, Schriftfarbe und andere Merkmale,
+                benötigt es eine
+                einheitliche Programmier-Sprache. HTML und CSS sind die am häufigsten genutzten Sprachen um Webseiten zu
+                gestalten.</li>
+            <li>CSS hat sich vor allem aufgrund seiner Einfachheit durchgesetzt. CSS ist einfach zu handhaben,
+                übersichtlicher als
+                andere Standards, vergleichsweise einfach zu lernen und lässt Webseiten schneller laden.</li>
+
+        </ol>
+
+
+    <br>
+</div>
+</section>
+  
+
+   
+    <hr>
+
+
+
+
+    
+
+
+  <section class="sec2" > 
+    <form action="process.php" method="POST" class="my-form">
+        <h2>Anmelde Form</h2>
+        <div class="form-group">
+            <label>Vorname</label>
+            <input type="text" name="vorname">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Nachname</label>
+            <input type="text" name="vorname">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="vorname" placeholder="admin@gmail.com">
+        </div>
+
+        <div class="form-group">
+            <br>
+            <label>Kommentar</label>
+            <textarea name="message" id="" cols="30" rows="8"></textarea>
+        </div>
+        <br>
+        <!-- <div class="form-group">
+            <label>Geschlecht</label>
+            <select name="geschleht" id="">
+                <option value="weiblich">Frau</option>
+                <option value="männlich">Herr</option>
+                <option value="divers">Divers</option>
+            </select>
+        </div>
+        <br> -->
+        <div class="form-group">
+            <label>Alter:</label>
+            <input type="number" name="alter">
+        </div>
+
+        <br>
+        <div class="form-group">
+            <label>Geburtsdatum:</label>
+            <input type="date" name="geburtsdatum">
+        </div>
+        <input type="submit" name="submit" value="Senden">
+    </form>
+
+<!-- Alinti icin -->
+    <blockquote cite="https://de.khanacademy.org/computing/computer-programming/html-css">
+        Lerne, wie du mit HTML und CSS Webseiten erstellen kannst. HTML ist die Markup Language, mit der du den Inhalt, die
+        Überschriften, Listen, Tabellen, und mehr auf deiner Seite beschreibst. CSS ist die Stylesheet Language, um die Seite zu
+        gestalten und Farbe, Schriftart, Layout und vieles mehr zu definieren.
+    </blockquote>
+    <p>The <abbr title="World Wide Web">WWW </abbr> is awesome</p>
+    <p> <cite>HTML crash course</cite>  by Brad Traversy</p>
+</section>
+
+   
+    
+  </div>
+
+    <div class="block">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est corporis ut numquam officiis laboriosam at eos saepe explicabo, earum harum cupiditate, id eius ducimus voluptatum eaque velit iste error?</p>
+    </div>
+    <div class="sidebar">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est corporis ut numquam officiis laboriosam
+            at eos saepe explicabo</p>
+    </div>
+    <div style="margin-top: 500px;"></div>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Tel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>ali@gmail.com</td>
+                <td>+49134566788880</td>
+            </tr>
+            <tr>
+                <td>Ayse</td>
+                <td>ayse@gmail.com</td>
+                <td>+49644235365778</td>
+            </tr>
+            <tr>
+                <td>Osman</td>
+                <td>osman@gmail.com</td>
+                <td>+49980087365667</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2023, von Özlem</p>
+    </footer>
+
+</body>
+
+</html>
